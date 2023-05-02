@@ -1,0 +1,79 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section{
+    display: flex;
+    width: 54rem;
+    height: 20rem;
+    margin: 5rem ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+    cursor: pointer;
+
+}
+main div.left{
+    width: 40%;
+}
+main section p.vert,p.rouge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9rem;
+    border-radius: .7rem;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+main section:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+main section:hover p.vert{
+    background-color: green;
+    opacity: .6;
+    transition: .5s;
+}
+main section:hover p.rouge{
+    background-color: red;
+    opacity: .6;
+    transition: .5s;
+}
+main div.left img{
+    height: 100%;
+    width: 90%;
+}
+main ul li{
+    display: flex;
+    align-items: center;
+}
+main ul.right{
+    margin: 2rem 1rem;
+}
+main ul li img{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+main ul li p.nom{
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
+main ul li p.age{
+    margin-left: 1rem;
+    color: grey;
+}
+main ul li p.pays{
+    margin: 1rem 0rem;
+    color: grey;
+}
+main div.ez{
+    margin-right: 15rem;
+}
+main div.ez h1{
+    margin-left: 15rem;
+}

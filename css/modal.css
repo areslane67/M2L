@@ -1,0 +1,72 @@
+/* modale */
+
+.parent-modale{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    min-height: 50vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+.hidden{
+    display: none;
+}
+.parent-modale .modale{
+    max-width: 40rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+    z-index: 2;
+    cursor: pointer;
+}
+.parent-modale .modale img{
+    width: 100%;
+}
+.parent-modale .modale .desc{
+    position: static;
+    transition: none;
+    background-color: #fff;
+    color: #222;
+    
+}
+.modale-active{
+    z-index: 1;
+    opacity: 1;
+    transform-origin: center center;
+}
+.parent-modale .modale .desc h3{
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+}
+.parent-modale .modale .desc p :is(time){
+    padding: 1rem;
+}
+.parent-modale .modale button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    color: #333;
+    cursor: pointer;
+}
+figcaption.desc form input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figcaption.desc form input{
+    width: 100%;
+    background-color: #f3d564;
+    padding: 1.5rem;
+}

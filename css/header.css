@@ -1,0 +1,133 @@
+/* reset */
+
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+*{ 
+    box-sizing:border-box;
+}
+button, #ex{
+    padding: 1rem ;
+    border: 0;
+    background-color: transparent;
+    background-color: #1a73e8;
+    width: 100%;
+    color: white;
+}
+
+/* header */
+
+header{
+    background-image: linear-gradient( to bottom,#F56B74,#EE4546, #E66AA2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+header div a{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    height: 8rem;
+}
+header a img.yes{
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+    filter: invert(1);
+}
+header a.co{
+    background: rgb(255 255 255 / .2);
+    padding-right: 2rem;
+    width: 100%;
+}
+header a.right{
+    padding-right: 2rem;
+}
+header a.Liste{
+    margin-right: 5rem;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div img{
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+}
+header div img.top{
+    border-radius: 20rem;
+    width: 6rem;
+    height: 6rem;
+}
+header a.Liste{
+    padding: 0rem 2rem;
+}
+#Liste{
+    background: rgb(255 255 255 / .2);
+}
+
+
+/* Main */
+main h1,p{
+    text-align: center;
+}
+main h1{
+    margin: 2rem auto;
+}
+main p.down{
+    margin-bottom: 3rem;
+}
+main form label{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+main form{
+    width: 50rem;
+    margin: 0 60rem;
+}
+main form label input,select{
+    padding: 1rem ;
+    border: 2px solid gray;
+    border-radius: .4rem;
+    background-color: transparent;
+    width: 25rem;
+    margin-left: 2rem;
+    margin: .5rem;
+
+}
+main form input#ex{
+    margin: 5rem 12rem 1rem 12rem;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+form input.byebye{
+    margin: 0rem 12rem;
+    border-radius: .7rem;
+    cursor: pointer;
+    padding: 1rem ;
+    border: 0;
+    background-color: transparent;
+    background-color: red;
+    width: 100%;
+    color: white;
+}
