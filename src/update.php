@@ -1,7 +1,7 @@
 <?php 
 
 // Connexion à la base de données
-$connexion = mysqli_connect("localhost", "root", "", "mdl");
+$connexion = mysqli_connect("localhost", "root", "", "projet");
 
 if(isset($_POST['submit'])) {
     $id = $user['id']; // récupérer l'ID de l'utilisateur à modifier à partir du formulaire
@@ -25,6 +25,10 @@ if(isset($_POST['submit'])) {
         mysqli_stmt_execute($req);
 
         if(mysqli_affected_rows($connexion) > 0) {
+            session_start();
+
+            // détruire la session
+            session_destroy();
             echo header("Location: ../mdl2/liste.php");
         } else {
             echo "Erreur lors de la mise à jour des informations de l'utilisateur.";

@@ -28,6 +28,27 @@ button, #ex{
     width: 100%;
     color: white;
 }
+main section p.vert,p.rouge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9rem;
+    border-radius: .7rem;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+main section:hover p.vert{
+    background-color: green;
+    opacity: .6;
+    transition: .5s;
+}
+main section:hover p.rouge{
+    background-color: red;
+    opacity: .6;
+    transition: .5s;
+}
 
 /* header */
 
@@ -76,6 +97,8 @@ header div img.top{
     border-radius: 20rem;
     width: 6rem;
     height: 6rem;
+    cursor: pointer;
+
 }
 header a.Liste{
     padding: 0rem 2rem;
@@ -98,30 +121,39 @@ main p.down{
 main form label{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between  ;
     align-items: center;
 }
 main form{
     width: 50rem;
-    margin: 0 60rem;
+    margin: auto;
+}
+main form label{
+    margin: 1rem auto;
+    text-align: end;
 }
 main form label input,select{
     padding: 1rem ;
     border: 2px solid gray;
     border-radius: .4rem;
     background-color: transparent;
-    width: 25rem;
+    width: 60%;
     margin-left: 2rem;
     margin: .5rem;
 
 }
 main form input#ex{
-    margin: 5rem 12rem 1rem 12rem;
+    margin: 5rem 12rem 1rem 0rem;
     border-radius: .7rem;
     cursor: pointer;
 }
+main button#openModalBtn{
+    border-radius: .7rem;
+    cursor: pointer;
+    width: 50rem;
+    background-color: red;
+}
 form input.byebye{
-    margin: 0rem 12rem;
     border-radius: .7rem;
     cursor: pointer;
     padding: 1rem ;

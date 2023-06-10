@@ -2,6 +2,15 @@ main{
     display: flex;
     flex-wrap: wrap;
 }
+form.oo input{
+    margin: 2rem 0rem 2rem 0rem;
+    width: 50rem;
+    height: 4rem;
+}
+div.vip{
+    width: 192rem;
+    display: flex;
+}
 main section{
     display: flex;
     width: 54rem;
@@ -9,7 +18,6 @@ main section{
     margin: 5rem ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: .5s;
-    cursor: pointer;
 
 }
 main div.left{

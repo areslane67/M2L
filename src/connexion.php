@@ -2,7 +2,7 @@
 
 if(isset($_POST["mail"]) || isset($_POST["psw"])){
     try {
-        $reponse = $_bdd->query("SELECT mail, nom, prenom, psw, Ville, Pays, tel, Birthdate, URL FROM inscription WHERE mail = '{$_POST['mail']}' limit 1");
+        $reponse = $_bdd->query("SELECT * FROM inscription WHERE mail = '{$_POST['mail']}' limit 1");
         $DATA  = $reponse->fetch();
         $login = $_POST["mail"];
         $mdp = $_POST["psw"];
@@ -21,6 +21,9 @@ if(isset($_POST["mail"]) || isset($_POST["psw"])){
                 $_SESSION['Pays'] = $DATA['Pays'];
                 $_SESSION['tel'] = $DATA['tel'];
                 $_SESSION['Birthdate'] = $DATA['Birthdate'];
+                $_SESSION['Categorie'] = $DATA['Categorie'];
+                $_SESSION['id'] = $DATA['id'];
+
 
                 $date = $DATA['Birthdate']; // récupérer la date stockée dans la base de données
                 $date_format = date('F jS', strtotime($date)); // formater la date en "F-jS"

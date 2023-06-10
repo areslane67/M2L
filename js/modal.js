@@ -1,7 +1,13 @@
+document.getElementById("openModalBtn").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "block";
+});
 
-let btn_delet;
- 
-btn_delet = document.querySelector(".btn-delet");
-btn_delet.addEventListener('click', () => {
-    modal.classList.remove("hidden");
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == document.getElementById("myModal")) {
+    document.getElementById("myModal").style.display = "none";
+  }
 });
